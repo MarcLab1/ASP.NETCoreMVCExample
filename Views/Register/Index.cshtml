@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Left or Right";
+}
+
+@ViewData["FirstMessage"]
+<br />
+@ViewData["SecondMessage"]
+<br />
+<br />
+
+
+<form asp-controller="Register" method="post">
+
+    <input type="submit" name="Left" value="Left" />
+    <input type="submit" name="Right" value="Right" />
+
+</form>
+<br />
+<br />
+
+@{
+    var parms = new Dictionary<string, string>
+    {
+                { "left", "frist" },
+                { "right", "bill" }
+            };
+}
+Can also try navigating to
+<a asp-action="welcome" asp-controller="Register"  asp-all-route-data="parms">/Welcome</a>
+using predefined parameters
+
+

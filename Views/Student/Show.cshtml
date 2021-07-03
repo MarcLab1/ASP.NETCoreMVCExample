@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Strongly typed @model directive";
+}
+
+@model Student
+<!--
+a Student object is passed as a strongly typed object to this view
+    at model Student
+    is translated into
+    Student model
+
+-->
+
+@Html.DisplayFor(model => model.id)
+@Html.DisplayFor(model => model.fName)
+@Html.DisplayFor(model => model.lName)

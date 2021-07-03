@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Student Again";
+}
+
+<ul>
+    <li>@((ViewData["students"] as Students).getStudent(0).fName)</li>
+    <li>@((ViewData["students"] as Students).getStudent(1).fName)</li>
+</ul>
+<br />
+
+@{
+    Students students = ViewData["students"] as Students;
+    List<string> strList = new List<string>();
+
+    for (int i = 0; i < students.getCount(); i++)
+    {
+        strList.Insert(i, students.getStudent(i).ToString());
+    }
+}
+
+<ul>
+    @foreach (string s in strList)
+    {
+        <li>@s</li>
+    }
+</ul>
+<br /><br />
+
+
+

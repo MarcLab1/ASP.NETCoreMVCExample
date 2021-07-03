@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Forms and Buttons";
+}
+
+@model Student
+
+<form method="post">
+    <p>
+        <label asp-for="id">id:</label>
+        <input asp-for="id" />
+    </p>
+    <p>
+        <label asp-for="fName">firstName:</label>
+        <input asp-for="fName" />
+    </p>
+    <p>
+        <label asp-for="lName">lastName:</label>
+        <input asp-for="lName" />
+    </p>
+
+    <p><button type="submit" asp-action="IndexTwo" >Submit</button></p>
+</form>
+
+<form method="post">
+    <p>
+        <label>id:</label>
+        <input type="text" id="id" name="id" />
+    </p>
+    <p>
+        <label>fName:</label>
+        <input type="text" id="fName" name="fName" />
+    </p>
+    <p>
+        <label>lName:</label>
+        <input type="text" id="lName" name="lName" />
+    </p>
+
+    <p><button type="submit" asp-action="IndexThree">Submit</button></p>
+</form>

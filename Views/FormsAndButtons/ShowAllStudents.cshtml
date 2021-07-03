@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Forms and Buttons Still";
+}
+
+@model IEnumerable<Student>
+
+@ViewData["Message"]
+@ViewBag.thing
+<br /> <br/>
+
+       <table style="width:50%">
+           <thead>
+               <tr>
+                   <th>id</th>
+                   <th>first name</th>
+                   <th>last name</th>
+                
+               </tr>
+           </thead>
+           <tbody>
+               @foreach (Student s in Model)
+               {
+                   <tr>
+                       <td>@s.id</td>
+                       <td>@s.fName</td>
+                       <td>@s.lName</td>
+                      
+                   </tr>
+               }
+           </tbody>
+       </table>

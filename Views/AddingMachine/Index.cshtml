@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Adding Machine";
+}
+
+<form asp-controller="AddingMachine" method="post">
+    <input name="Text1" type="text" /> <br />
+    + <br />
+    <input name="Text2" type="text" /> <br /><br />
+    <input type="submit" value="=" formaction="" /><br /><br />
+</form>
+
+<h2 padding:10px;">
+    @ViewBag.Result
+</h2>
+

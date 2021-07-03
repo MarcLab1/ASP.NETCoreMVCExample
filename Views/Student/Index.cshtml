@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Student";
+}
+
+<ul>
+    <li>@((ViewData["s1"] as Student).id)</li>
+    <li>@((ViewData["s2"] as Student).id)</li>
+</ul>
+<br />
+<br />
+
+Navigate to
+<a asp-action="student">/Student</a>
+to see us use Lists and objects in action
+<br />
+<br />
+
+Navigate to
+<a asp-action="show">/Show</a>
+to see the stronly typed model directive in action
+<br />
+<br />
+
+
+
+

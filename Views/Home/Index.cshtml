@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Generate HTML Color";
+}
+
+@{
+    HTMLColor color = ViewData["Color"] as HTMLColor;
+}
+<body style="background-color:rgb(@color.red, @color.green, @color.blue);">
+    <div class="text-center">
+        <br />
+        <form method="post">
+            <p>
+                <input name="Button1" value="Generate random HTML color" id="Button1" title="Submit" style="border-style:Solid;" type="submit" />
+            </p>
+        </form>
+
+        @{
+            <div style="color:black">
+                <p>
+                    RBG: @color.colorRBG
+                </p>
+                <p>
+                    Hexadecimal: @color.colorHex
+                </p>
+                <p>
+                    Generated on: @DateTime.Now.ToString()
+                </p>
+            </div>
+
+            <div style="color:white">
+                <p>
+                    RBG: @color.colorRBG
+                </p>
+                <p>
+                    Hexadecimal: @color.colorHex
+                </p>
+                <p>
+                    Generated on: @DateTime.Now.ToString()
+                </p>
+            </div>
+        }
+
+    </div>
+</body>
