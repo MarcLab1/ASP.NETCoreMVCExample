@@ -1,0 +1,37 @@
+﻿@model Student 
+
+<h1>Create New Student</h1>
+
+<form asp-controller="WorkingWithData" method="post"  asp-action="Show">
+    <fieldset>
+
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+
+            <p>
+                @Html.LabelFor(x => x.id)
+                @Html.EditorFor(x => x.id)
+                @Html.ValidationMessageFor(x => x.id)
+            </p>
+
+            <p>
+                @Html.LabelFor(x => x.fName)
+                @Html.EditorFor(x => x.fName)
+                @Html.ValidationMessageFor(x => x.fName)
+            </p>
+
+            <p>
+                @Html.LabelFor(x => x.lName)
+                @Html.EditorFor(x => x.lName)
+                @Html.ValidationMessageFor(x => x.lName)
+            </p>
+
+            <p>
+                <button type="submit">Create Student</button>
+            </p>
+        }
+
+    </fieldset>
+</form>
+

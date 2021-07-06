@@ -5,6 +5,8 @@
 @{
     HTMLColor color = ViewData["Color"] as HTMLColor;
 }
+
+
 <body style="background-color:rgb(@color.red, @color.green, @color.blue);">
     <div class="text-center">
         <br />
@@ -39,6 +41,13 @@
                 </p>
             </div>
         }
+
+
+        <br /><br />
+        @Html.ActionLink("Html Aciton link that brings you to the Student View", "Index", "Student") <!-- (text, name of View, name of controller)-->
+        <br/><br/>
+        <a href="@Url.Action("Index", "Student")" title="SSSStedent">Another way of using action links </a>
+
 
     </div>
 </body>

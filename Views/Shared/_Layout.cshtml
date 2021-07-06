@@ -34,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="FormsAndButtons2" asp-action="Index">Forms And Buttons 2</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="WorkingWithData" asp-action="Index">Working With Data</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,14 +45,17 @@
 
     <div class="container">
         <main role="main" class="pb-3">
+            @RenderSection("titleBox", false) @*false means optional*@
+            
             @RenderBody()
+
         </main>
     </div>
 
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Getting the hang of ASP.NET Core
+    <footer class="border-top footer text-muted" >
+        <div class="container" >
+            &copy; @DateTime.Now.Year - Getting the hang of ASP.NET Core
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,9 +1,16 @@
-﻿namespace WebApplicationRandomHTMLColor.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebApplicationRandomHTMLColor.Models
 {
     public class Student
     {
+        [Required]
         public int id { get; set; }
+        
+        [Required]
+        [StringLength(100, MinimumLength = 2, ErrorMessage = "Last Name has to be 2 characters min and 100 max")]
         public string lName { get; set; }
+        [Required]
         public string fName { get; set; }
 
         public Student()

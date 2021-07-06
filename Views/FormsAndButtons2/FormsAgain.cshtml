@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Forms and Buttons";
+}
+
+@model Student
+
+<fieldset>
+    @using (Html.BeginForm())
+    {
+        <p>
+            @Html.TextAreaFor(x => x.id)
+        </p>
+        <p>
+            @Html.TextBoxFor(x => x.fName)
+        </p>
+        <p>
+            @Html.TextAreaFor(x => x.lName)
+        </p>
+    }
+
+
+</fieldset>

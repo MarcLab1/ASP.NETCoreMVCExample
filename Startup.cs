@@ -51,7 +51,7 @@ namespace WebApplicationRandomHTMLColor
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");  // ? is an optional parameter
             });
         }
     }

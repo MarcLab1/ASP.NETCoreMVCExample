@@ -4,6 +4,12 @@
 
 @model Student
 
+
+@section titleBox{
+
+    <h3>This is the titleBox layout section of the FormsAndButtons/Index.html page</h3>
+}
+
 <form method="post">
     <p>
         <label asp-for="id">id:</label>
@@ -18,7 +24,7 @@
         <input asp-for="lName" />
     </p>
 
-    <p><button type="submit" asp-action="IndexTwo" >Submit</button></p>
+    <p><button type="submit" asp-action="IndexTwo">Submit</button></p>
 </form>
 
 <form method="post">
