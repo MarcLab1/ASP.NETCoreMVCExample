@@ -1,4 +1,5 @@
-﻿@model Student 
+﻿
+@model Student 
 
 <h1>Create New Student</h1>
 
@@ -10,10 +11,10 @@
             @Html.ValidationSummary()
 
             <p>
-                @Html.LabelFor(x => x.id)
-                @Html.EditorFor(x => x.id)
-                @Html.ValidationMessageFor(x => x.id)
-            </p>
+                <label asp-for="id"></label>
+                <input asp-for="id" class="form-control" placeholder="Enter the id" />
+                <span asp-validation-for="id"></span>
+             </p>
 
             <p>
                 @Html.LabelFor(x => x.fName)

@@ -6,7 +6,17 @@ namespace WebApplicationRandomHTMLColor.Models
     {
         [Required]
         public int id { get; set; }
-        
+
+        private string _key;
+
+        public string key
+        {
+            get
+            {
+
+            }
+        }
+
         [Required]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "Last Name has to be 2 characters min and 100 max")]
         public string lName { get; set; }
