@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace WebApplicationRandomHTMLColor.Models
 {
@@ -9,12 +10,17 @@ namespace WebApplicationRandomHTMLColor.Models
 
         private string _key;
 
-        public string key
+        public string Key
         {
             get
             {
-
+                if(_key == null)
+                {
+                    _key = Regex.Replace(fName.ToLower(), "[^a-z0-9]", "-");
+                }
+                return _key;
             }
+            set { _key = value; }
         }
 
         [Required]

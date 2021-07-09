@@ -24,7 +24,8 @@ namespace WebApplicationRandomHTMLColor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            services.AddMvc();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +53,11 @@ namespace WebApplicationRandomHTMLColor
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");  // ? is an optional parameter
+
+                endpoints.MapRazorPages();
             });
+
+            
         }
     }
 }
