@@ -1,0 +1,177 @@
+﻿@page
+@model WebApplicationRandomHTMLColor.Pages.bootstrapModel
+@{
+}
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .bg1 {
+            background-color: aqua;
+        }
+
+        .bg2 {
+            background-color: yellowgreen;
+        }
+
+        .bg3 {
+            background-color: rosybrown
+        }
+
+        .bg4 {
+            background-color: peru;
+        }
+    </style>
+
+    <h1>Heading 1 <small>is the best</small></h1>
+    <h2>Heading 2 <small>is the 2nd best</small></h2>
+    <h3>Heading 3 <mark>uses highlights</mark></h3>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container=fluid">
+        <div class="row">
+            <div class="col-lg-6 bg1">some text</div>
+            <div class="col-lg-6 bg2">hello world?</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 bg1">some text</div>
+            <div class="col-lg-4 bg2">hello world?</div>
+            <div class="col-lg-4 bg3">some text</div>
+        </div>
+    </div>
+
+    <section>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+    </section>
+
+    <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+    <p class="bg-primary">This thing about <kbd>Arsenal</kbd>is that they always <code>try to walk it in</code></p>
+
+    <div class="container">
+        <table class="table table-condensed">
+            <thead>
+                <tr class="success">
+                    <th>Name</th>
+                    <th>SIN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info">
+                    <td>Marc</td>
+                    <td>404</td>
+                </tr>
+                <tr>
+                    <td>Jin</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <img class="img-thumbnail" src="dogs.jpg" width="300" height="300" />
+    <img class="img-responsive" src="dogs.jpg" width="300" height="300" />
+
+    <button type="button" class="btn btn-primary btn-lg btn-block bg1">Button 1</button>
+    <button type="button" class="btn btn-default active">Button 2</button>
+    <br> <br>
+
+    <h5>Button group</h5>
+    <div class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-primary">Home</button>
+        <button type="button" class="btn btn-primary">Privacy</button>
+    </div>
+    <br> <br>
+
+    <h5>Button Group using Link elements</h5>
+    <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-primary">Home</a>
+        <a href="#" class="btn btn-primary">Privacy</a>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <p>Mail: <span class="glyphicon glyphicon-envelope"></span></p>
+    </div>
+
+    <h5>Badges</h5>
+    <div class="container">
+        <a href="#">Hamburger<span class="badge">8</span> </a>
+        <a href="#">Hot Dog<span class="badge">8</span> </a> <br><br>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width:40%"></div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item"><span class="badge">12</span>item 1</li>
+            <li class="list-group-item"><span class="badge">55</span>item 2</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Link 1</a></li>
+            <li> <a href="#">Link 2</a></li>
+            <li> <a href="#">Link 3</a></li>
+        </ul>
+    </div>
+
+
+</body>
+

@@ -13,6 +13,12 @@ namespace WebApplicationRandomHTMLColor.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult IndexOne()
+        {
+            ViewData["Message"] = "clogs";
+            return View("ShowAllStudents", Repo.AllStudents);
+        }
 
         // HTTP POST VERSION  
         [HttpPost]
